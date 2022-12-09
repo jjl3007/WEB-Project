@@ -1,35 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery - Fresh Cakes & Small Chops</title>
+    <title>Cake Shop</title>                                                                                           <!-- TODO: REPLACE GENERIC TEXT -->
+
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div id="header">
-            <h1>test</h1>
+
+    <!-- header section start here  -->
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <h1 class="logoName">Sweet Cake </h1>
         </div>
-        <nav>
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="/menu.html">Menu</a></li>
-            </ul>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#product">product</a>
         </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i> <!-- TODO: FIX SEARCH BAR -->
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="search...">
+        </div>
     </header>
+    <!-- header section end here  -->
 
-    <!-- HERO SECTION -->
-
-    <section class="main">
-        <div class="container">
-            <h1 class="headline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis doloremque porro fugit eveniet, soluta placeat libero! Similique, quibusdam aliquam repellendus tempora omnis expedita sint magni, necessitatibus quam eum, incidunt velit.</h1>
-            <a href="menu.html">See our menu</a>
+    <!-- home section start here  -->
+    <section class="home" id="home">
+        <div class="homeContent">
+            <h2>Cake shop </h2>                                                                                         <!-- TODO: REPLACE GENERIC TEXT -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum excepturi doloribus, fuga quod deserunt     <!-- TODO: REPLACE GENERIC TEXT -->
+                recusandae?</p>
+            <div class="home-btn">
+                <a href="#product"><button>see more</button></a>
+            </div>
         </div>
     </section>
+
+    <!-- home section end here  -->
+
+    <!-- product section start here  -->
+    <section class="product" id="product">
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Chocolate</h3>
+                        <p>Satisfy your chocolate cravings with our decadent chocolate cake. Made with rich and velvety chocolate, 
+                        this delicious dessert is sure to delight your senses. The moist and tender cake is bursting with bold chocolate flavor, 
+                        while the smooth and creamy frosting adds the perfect finishing touch.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Vanilla</h3>
+                        <p>Indulge in the rich and creamy flavor of our homemade vanilla cake. Made from scratch using only the finest ingredients.
+                        <br>Order now and savor the irresistible taste of pure vanilla bliss.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Strawberry</h3>
+                        <p>Treat your taste buds to the fresh and fruity flavor of our strawberry cake. Made with juicy, ripe strawberries, 
+                        this mouthwatering dessert is bursting with sweet and tangy flavor.
+                        It is delicately infused with the flavor of strawberries, while the smooth and creamy frosting adds a touch of sweetness.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cookies n' Cream</h3>
+                        <p>Made with crumbled chocolate sandwich cookies and rich and velvety vanilla ice cream. The perfect balance of sweet and savory.<br> This dessert is sure to satisfy your cravings.
+                         Whether you're celebrating a special occasion or simply looking for a tasty treat, our cookies and cream dessert is the perfect choice. 
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper product-row">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Reese's<span style="font-size:x-small;"> *LIMITED*</span></h3>
+                        <p>Layers of moist chocolate cake and creamy peanut butter frosting, 
+                        topped with chopped Reese's Pieces candy. The perfect combination of chocolate and peanut butter, 
+                        this cake is sure to delight any Reese's fan.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Lemon</h3>
+                        <p>Treat your taste buds to the fresh and zesty flavor of our lemon cake. Made with juicy and tart lemons,
+                        this mouthwatering dessert is bursting with tangy and refreshing flavor.
+                        Whether you're celebrating a special occasion or simply craving something tangy and sweet, our lemon cake is the perfect choice.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake1.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Mango</h3>
+                        <p>A freshly baked mango cake is a true delight for the senses. The soft and fluffy texture of the cake, combined with the sweet and juicy flavor of ripe mangoes,
+                         is a treat that is hard to resist. As you take a bite, the smooth and creamy frosting will melt on your tongue.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="img">
+                        <img src="images/cake2.png" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h3>Canadian</h3>
+                        <p>Experience the unique and delicious flavor of our Canadian-style cake. 
+                        Made with classic Canadian ingredients like maple syrup and cream. The soft and fluffy cake is infused with the warm,
+                        inviting flavor of maple, while the smooth and creamy frosting adds the perfect touch of sweetness..<br>Order now and indulge in the delicious taste of Canada.
+                        </p>
+                        <div class="orderNow">
+                            <button>Order Now </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- product section end here  -->
+
+    <!-- footer section start here  -->
+
+    <footer class="footer" id="contact">
+        <div class="box-container">
+            <div class="mainBox">
+                <div class="content">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                    <h1 class="logoName"> Cake Shop </h1>
+                </div>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus maxime quod.</p>
+
+            </div>
+        <div class="credit">
+            created by <span>Eshban and Juan </span>
+        </div>
+    </footer>
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file  -->
+    <script src="index.js"></script>
+
 
 </body>
 
